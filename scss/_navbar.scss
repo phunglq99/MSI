@@ -1,0 +1,61 @@
+.nav {
+  border-bottom: 1px solid $black-blur;
+  &_root {
+    padding: 25px 0;
+    display: flex;
+    align-content: center;
+    position: relative;
+  }
+
+  &_logo {
+    padding-right: 60px;
+    &_image {
+      max-width: 5em;
+      min-height: 5em;
+      object-fit: cover;
+    }
+  }
+  &_lists {
+    width: 971px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_link {
+    font-size: 1.5em;
+    color: $black;
+    font-weight: 600;
+  }
+  &_feature {
+    display: flex;
+    align-items: center;
+    margin-left: 161px;
+    i {
+      font-size: 1.5em;
+      margin-left: 30px;
+    }
+  }
+  &_image_user {
+    max-width: 3.5em;
+    max-height: 3.5em;
+    border-radius: 3.5em;
+    margin-left: 30px;
+  }
+  &_search {
+    // position: relative;
+    &_text {
+      padding: 0.7em;
+      border-radius: 2rem;
+    }
+    &_field {
+      position: absolute;
+      top: 100%;
+      right: 7%;
+    }
+    &_icon {
+      position: absolute;
+      right: 0;
+      font-size: 1.4rem !important;
+    }
+  }
+}

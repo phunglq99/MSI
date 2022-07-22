@@ -1,0 +1,29 @@
+.wrapper-header {
+  background-color: $black;
+  color: $black-blur;
+}
+.header {
+  padding: 10px 0;
+  &_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_time {
+    span:first-child {
+      color: white;
+    }
+  }
+  &_location {
+    a {
+      color: white;
+    }
+  }
+  &_contact {
+    color: white;
+    i {
+      margin-left: 5px;
+      font-size: 1.5em;
+    }
+  }
+}

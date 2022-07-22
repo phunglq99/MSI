@@ -10,10 +10,38 @@ html {
 }
 
 body {
-  font-family: "Poppins",
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #444;
-  background-color: #f3f3f3;
-  height: 100vh;
-  padding: 2rem;
+  // background-color: #f3f3f3;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+//
+.main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1428px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// button
+.button {
+  border: 0.2rem solid;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  color: $primary !important;
+  &--primary {
+    border-color: $primary;
+  }
 }
