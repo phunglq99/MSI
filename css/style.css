@@ -77,6 +77,7 @@ img {
 
 .nav {
   border-bottom: 1px solid #acacac;
+  background-color: white;
 }
 .nav_root {
   padding: 25px 0;
@@ -85,7 +86,8 @@ img {
   position: relative;
 }
 .nav_logo {
-  padding-right: 60px;
+  padding-right: 45px;
+  margin-left: 15px;
 }
 .nav_logo_image {
   max-width: 5em;
@@ -126,11 +128,116 @@ img {
   position: absolute;
   top: 100%;
   right: 7%;
+  height: 0px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  outline: none;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+}
+.nav_search_field.active {
+  opacity: 1;
+  height: 40px;
+  pointer-events: auto;
 }
 .nav_search_icon {
   position: absolute;
-  right: 0;
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 1.4rem !important;
+}
+
+.banner {
+  padding-bottom: 37px;
+}
+.banner-prev {
+  position: absolute;
+  color: white;
+  background-color: #282323;
+  border-color: #282323;
+  font-size: 24px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  outline: none;
+}
+.banner-next {
+  position: absolute;
+  color: white;
+  background-color: #282323;
+  border-color: #282323;
+  font-size: 24px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  outline: none;
+}
+
+.new-products__title {
+  padding-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new-products__title h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.new-products__title-link {
+  font-size: 13px;
+  line-height: 1.0714285714;
+  color: black;
+  text-decoration: undeline;
+}
+.new-products__item {
+  max-width: 235px;
+  padding: 0 25px;
+}
+.new-products__item-image {
+  padding: 26px 18px 10px;
+}
+.new-products__item-review i {
+  color: #e9a426;
+}
+.new-products__item-review span {
+  margin-left: 9px;
+  font-size: 12px;
+  line-height: 2.0833333333;
+  font-weight: 400;
+  color: #acacac;
+}
+.new-products__item-link {
+  display: block;
+}
+.new-products__item-link h5 {
+  font-size: 13px;
+  line-height: 1.4615384615;
+  color: black;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.new-products__lists {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.new-products__item {
+  border: 1px solid;
 }
 
 /*# sourceMappingURL=style.css.map */

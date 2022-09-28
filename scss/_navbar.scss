@@ -1,5 +1,7 @@
 .nav {
   border-bottom: 1px solid $black-blur;
+  background-color: white;
+ 
   &_root {
     padding: 25px 0;
     display: flex;
@@ -8,7 +10,8 @@
   }
 
   &_logo {
-    padding-right: 60px;
+    padding-right: 45px;
+    margin-left: 15px;
     &_image {
       max-width: 5em;
       min-height: 5em;
@@ -42,7 +45,6 @@
     margin-left: 30px;
   }
   &_search {
-    // position: relative;
     &_text {
       padding: 0.7em;
       border-radius: 2rem;
@@ -51,10 +53,26 @@
       position: absolute;
       top: 100%;
       right: 7%;
+      height: 0px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      outline: none;
+      pointer-events: none;
+      opacity: 0;
+      z-index: 1;
+      &.active {
+        opacity: 1;
+        height: 40px;
+        pointer-events: auto;
+        
+      }
     }
     &_icon {
       position: absolute;
-      right: 0;
+      right: 11px;
+      top: 50%;
+      transform: translateY(-50%);
       font-size: 1.4rem !important;
     }
   }

@@ -1,0 +1,33 @@
+.banner {
+  padding-bottom: 37px;
+  &-prev {
+    position: absolute;
+    color: $white;
+    background-color: $black-blur-bg;
+    border-color: $black-blur-bg;
+    font-size: 24px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    outline: none;
+  }
+  &-next {
+    position: absolute;
+    color: $white;
+    background-color: $black-blur-bg;
+    border-color: $black-blur-bg;
+    font-size: 24px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    outline: none;
+  }
+}

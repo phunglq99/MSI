@@ -19,10 +19,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MSI</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body>
     <div class="main">
       <!-- Header -->
       <div class="wrapper-header">
@@ -54,6 +59,7 @@
           </header>
         </div>
       </div>
+
       <!-- NAVBAR -->
       <nav class="nav">
         <div class="container">
@@ -97,17 +103,18 @@
             </ul>
             <div class="nav_feature">
               <i class="fa-solid fa-magnifying-glass nav_search">
-                <div class="nav_search_field">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    class="nav_search_text"
-                  />
-                  <i
-                    class="fa-solid fa-magnifying-glass nav_search_icon"
-                  ></i>
-                </div>
+                
               </i>
+              <div class="nav_search_field">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="nav_search_text"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass nav_search_icon"
+                ></i>
+              </div>
               <i class="fa-solid fa-cart-shopping"></i>
               <img
                 src="../img/imageUser.png"
@@ -118,6 +125,61 @@
           </div>
         </div>
       </nav>
+
+      <!-- Banner -->
+      <div class="banner">
+        <div class="container">
+          <div class="banner__slide">
+            <img src="../img/banner.png" alt="123" class="banner__slide-image">
+            <img src="../img/banner.png" alt="123" class="banner__slide-image">
+          </div>
+        </div>
+      </div>
+
+      <!-- New Products -->
+      <div class="new-products">
+          <div class="container">
+            <div class="new-products__title">
+                <h3>New Products</h3>
+                <a href="#" class="new-products__title-link">See All New Products</a>
+            </div>
+
+            <!-- New product item -->
+          <ul class="new-products__lists">
+            <li class="new-products__item">
+              <a href="#" class="new-products__item-link">
+                  <img src="../img/newProduct1.png" alt="" class="new-products__item-image">
+                    <div class="new-products__item-review">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                      <span>Review(4)</span>
+                    </div>
+                    <h5>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h5>
+                    <span class="new-products__item-price">$499.00</span>
+                    <span>$399.00</span>
+                  </a>
+            </li>
+           
+          </ul>
+          </div>          
+      </div>
     </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+   <script src="../js/search.js"></script>
+   <script src="../js/slick.js"></script>
   </body>
 </html>
