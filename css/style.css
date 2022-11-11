@@ -183,6 +183,23 @@ img {
   transform: translateY(-50%);
   outline: none;
 }
+.banner__slide button:first-child {
+  outline: none;
+  border: none;
+  border-radius: 0px 30px 30px 0px;
+  cursor: pointer;
+}
+.banner__slide button:last-child {
+  outline: none;
+  border: none;
+  border-radius: 30px 0px 0px 30px;
+  cursor: pointer;
+}
+.banner .fa-angle-left:before,
+.banner .fa-angle-right:before {
+  vertical-align: middle;
+  font-size: 16px;
+}
 
 .new-products__title {
   padding-bottom: 14px;
