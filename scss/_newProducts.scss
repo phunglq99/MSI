@@ -48,6 +48,9 @@
     }
     &-link {
       display: block;
+      &:hover {
+        text-decoration: none;
+      }
 
       h5 {
         margin-bottom: 16px;
