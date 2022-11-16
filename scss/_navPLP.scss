@@ -1,0 +1,27 @@
+.nav {
+
+    &-link {
+        margin-right: 10px;
+        padding-right: 0;
+        padding-left: 0;
+        color: $text-black-blur !important;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        line-height: 22px;
+
+        &.active {
+            background-color: white !important;
+            color: $black !important;
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            line-height: 22px;
+            border-bottom: 2px solid $primary;
+        }
+    }
+
+    &-item {
+        padding-right: 16px;
+    }
+}
